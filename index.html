@@ -22,6 +22,16 @@
       .card:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
       }
+      .carousel-indicators {
+        bottom: 0;
+      }
+      .carousel-indicators li {
+        background-color: #868e96;
+        cursor: pointer;
+      }
+      .carousel-indicators .active {
+        background-color: #007bff;
+      }
     </style>
     
   </head>
@@ -283,6 +293,52 @@
               <button type="button" class="btn btn-sm btn-outline-info" data-toggle="collapse" data-target="#collapse-certificate" aria-expanded="false" aria-controls="collapse-certificate">Show all</button>
             </div>
           </div>
+          <div class="card mb-4">
+            <h2 class="card-header text-center text-white bg-info">Testimonials</h2>
+            <div class="card-body">
+              <div id="carousel" class="carousel slide" data-ride="false">
+                <ol class="carousel-indicators mb-0">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <!-- <li data-target="#carousel" data-slide-to="2"></li>
+                  <li data-target="#carousel" data-slide-to="3"></li>
+                  <li data-target="#carousel" data-slide-to="4"></li> -->
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <blockquote class="blockquote text-center d-flex flex-column justify-content-center">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum porttitor, tempor risus eget, finibus enim.</p>
+                      <footer class="blockquote-footer">Firstname Lastname</footer>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote text-center d-flex flex-column justify-content-center">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum porttitor, tempor risus eget, finibus enim. Morbi porta ligula elit, at eleifend tellus tincidunt sit amet. Nunc ex ligula, rutrum vel lorem vel, auctor placerat mi.</p>
+                      <footer class="blockquote-footer">Firstname Lastname</footer>
+                    </blockquote>
+                  </div>
+               <!--    <div class="carousel-item">
+                    <blockquote class="blockquote text-center d-flex flex-column justify-content-center">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum porttitor, tempor risus eget, finibus enim. Morbi porta ligula elit, at eleifend tellus tincidunt sit amet. Nunc ex ligula, rutrum vel lorem vel, auctor placerat mi. Duis sed ante ultrices, viverra elit eu, ultricies sem. Donec quis porta sapien. Cras at lacus purus.</p>
+                      <footer class="blockquote-footer">Firstname Lastname</footer>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote text-center d-flex flex-column justify-content-center">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum porttitor, tempor risus eget, finibus enim. Morbi porta ligula elit, at eleifend tellus tincidunt sit amet. Nunc ex ligula, rutrum vel lorem vel, auctor placerat mi.</p>
+                      <footer class="blockquote-footer">Firstname Lastname</footer>
+                    </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                    <blockquote class="blockquote text-center d-flex flex-column justify-content-center">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in ipsum porttitor, tempor risus eget, finibus enim.</p>
+                      <footer class="blockquote-footer">Firstname Lastname</footer>
+                    </blockquote>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-lg-4">
           <div class="card mb-4">
@@ -364,7 +420,7 @@
                     <div class="form-group">
                       <div class="input-group input-group-sm">
                         <span class="input-group-addon" id="email">Email:</span>
-                        <input type="email" class="form-control" name="_replyto" placeholder="Your email here" aria-label="Your email" aria-describedby="email">
+                        <input type="email" class="form-control" name="email" placeholder="Your email here" aria-label="Your email" aria-describedby="email">
                       </div>
                     </div>
                     <div class="form-group">
@@ -471,8 +527,31 @@
               <div class="progress mb-3">
                 <div class="progress-bar bg-info w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              </div>
             </div>
+          </div>
+          <div class="card mb-4 text-center">
+            <h2 class="card-header text-center text-white bg-info">Interests</h2>
+            <div class="card-body">
+              <!-- <button type="button" class="btn btn btn-info my-1 mx-1"><a href="https://en.wikipedia.org/wiki/Computer_programming" class="text-white"> Programming</a></button>
+              <button type="button" class="btn btn btn-info my-1 mx-1"> Web Development</button>
+              <button type="button" class="btn btn btn-info my-1 mx-1"> Physics</button>
+              <button type="button" class="btn btn btn-info my-1 mx-1"> Sketching</button>
+              <button type="button" class="btn btn btn-info my-1 mx-1"> Artificial Intelligence</button> -->
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Computer_programming" class="text-white"> Computer Programming</a></button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Web_development" class="text-white"> Web Development</a></button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Sketch_(drawing)" class="text-white"> Sketching</a></button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="text-white"> Artificial Intelligence</a></button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-info"><a href="https://en.wikipedia.org/wiki/Physics" class="text-white"> Physics</a></button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center">
+            <!-- <button class="btn btn-lg btn-info">Download Resume</button> -->
+            <a class="btn btn-lg btn-info" role="button" href="resume/AkashGiri_Resume.pdf" download="AkashGiri_Resume.pdf">
+              <i class="fas fa-fw fa-download"></i> Download my resume 
+              <i class="far fa-fw fa-file-pdf"></i>
+            </a>
           </div>
         </div>
       </div>
