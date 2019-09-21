@@ -3,8 +3,6 @@ body {
    min-height: 100%;
    margin: 0;
    justify-content: center;
-   background: #f0f0d8;
-   
 }
  h2 {
    margin-top: 2rem;
@@ -55,7 +53,6 @@ footer {
   color: #41403e;
   position: relative;
   margin-top: 5rem;
-  background-color: #f0f0d8;
   text-align: center;
   font-size: 1.5rem;
 }
