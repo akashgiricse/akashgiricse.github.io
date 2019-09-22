@@ -24,13 +24,13 @@ body {
    justify-content: center;
    width: 100%;
    min-height: 100%;
-   margin-bottom: 0.1rem;
+
 }
  section a {
    text-decoration: none;
    align-self: center;
    background: transparent;
-   padding: 1rem 1rem;
+   padding: 0.1rem 1rem;
    margin: 0.5rem 1rem;
    color: #41403e;
    font-size: 2rem;
