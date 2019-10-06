@@ -30,38 +30,65 @@
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
 	<!-- Device friendly -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body>
 
-	<section>
-		<img src="img/profile.png" alt="Portrait of Akash Giri" />
-	</section>
+	<div class="wrapper">
+		<div class="profile-card js-profile-card">
+			<div class="profile-card__img">
+				<img src="./img/profile.png" alt="profile card">
+			</div>
 
-	<h1>AKASH GIRI</h1>
-	<h2>Wed developer | Freelancer</h2>
+			<div class="profile-card__cnt js-profile-cnt">
+				<div class="profile-card__name">Akash Giri</div>
+				<div class="profile-card__txt">Web Developer | Freelancer</div>
+				<div class="profile-card-loc">
+					Bengaluru, India
+				</div>
 
-	<section>
-		<a href="https://akashgiri.com/resume/"><i class="fas fa-user"></i> Resume</a>
-		<a href="https://github.com/akashgiricse"><i class="fab fa-github"></i> GitHub</a>
-		<a href="https://akashgiricse.github.io/blog/"><i class="fas fa-pen"></i> Blog</a>
-		<a href="https://dev.to/akashgiricse"><i class="fab fa-dev"></i> DEV</a>
-	</section>
-	<section>
-		<a href="https://www.linkedin.com/in/akashgiricse/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-		<a href="https://twitter.com/akashgiricse"><i class="fab fa-twitter"></i> Twitter</a>
-		<a href="https://www.youtube.com/channel/UCz4zuvhKpwofQNtDOvvj5wQ"><i class="fab fa-youtube"></i> YouTube</a>
-		<a href="https://medium.com/@akashgiricse"><i class="fab fa-medium"></i> Medium</a>
-	</section>
+				<div class="profile-card-social">
+					<a href="https://akashgiricse.github.io/blog/" class="profile-card-social__item pen"
+						target="_blank">
+						<i class="fas fa-pen"></i>
+					</a>
+					<a href="https://dev.to/akashgiricse" class="profile-card-social__item dev" target="_blank">
+						<i class="fab fa-dev"></i>
+					</a>
 
-	<footer>
-		&copy; 2019 Akash Giri.
-	</footer>
+					<a href="https://twitter.com/akashgiricse" class="profile-card-social__item twitter"
+						target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCz4zuvhKpwofQNtDOvvj5wQ"
+						class="profile-card-social__item youtube" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/akashgiricse/" class="profile-card-social__item linkedin"
+						target="_blank">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://akashgiri.com/resume/" class="profile-card-social__item user" target="_blank">
+						<i class="fas fa-user"></i>
+					</a>
+					<a href="https://github.com/akashgiricse" class="profile-card-social__item github" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				<div class="profile-card-ctr">
+					<a href="https://akashgiri.com/resume/resume/Akash_Giri_Resume.pdf" target="_blank"><button
+							class="profile-card__button button--orange"><i class="fas fa-download"></i>
+							Resume</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 
