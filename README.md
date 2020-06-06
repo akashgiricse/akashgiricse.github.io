@@ -1,2 +1,4 @@
 # [akashgiri.com](https://akashgiri.com/)
-Akash Giri | Home
+### Akash Giri
+## Software Engineer
+I learn, design, and code software products and services
