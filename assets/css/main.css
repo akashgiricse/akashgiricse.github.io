@@ -1,0 +1,30 @@
+.jumbotron {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.jumbotron-youtube {
+  background-image: none;
+  min-height: 1vh;
+}
+
+section {
+  padding-top: 4rem;
+}
+#section-newsletter {
+  padding-top: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
