@@ -78,7 +78,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
   </head>
   <body data-spy="scroll" data-target="#navScrollspy">
-    <nav class="navbar bg-danger navbar-dark navbar-expand-md fixed-top">
+    <nav class="navbar navbar-dark bg-danger navbar-expand-md fixed-top">
       <a href="" class="navbar-brand"
         ><i class="fa fa-code" aria-hidden="true"></i> Akash Giri</a
       >
@@ -144,8 +144,8 @@
           href="assets/resume/Akash_Giri_Resume.pdf"
           class="btn btn-lg btn-danger"
           target="_blank"
-          ><i class="fas fa-download" aria-hidden="true"></i> Resume</a
-        >
+          >Resume <i class="fas fa-download" aria-hidden="true"></i
+        ></a>
       </div>
     </section>
     <div class="container">
@@ -185,7 +185,7 @@
                   YouTube
                 </b>
               </h1>
-              <p class="lead text-dark text-justify">
+              <p class="lead text-justify">
                 If you are searching for stuff related to software development,
                 do subscribe to my YouTube channel. I create courses related to
                 software development and coding in general.
@@ -200,7 +200,7 @@
               </a>
               <a
                 type="button"
-                class="btn btn-lg btn-outline-danger d-block d-sm-inline-block mb-sm-0"
+                class="btn btn-lg btn-outline-danger d-block d-sm-inline-block mb-sm-0 text-white"
                 href="https://www.youtube.com/c/akashgiri"
                 target="_blank"
               >
@@ -277,10 +277,10 @@
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
             <div class="h1">
-              <i class="fab fa-dev mb-4 text-dark" aria-hidden="true"></i>
+              <i class="fab fa-dev" aria-hidden="true"></i>
             </div>
             <a
-              class="btn btn-lg btn-dark mt-auto mb-4 text-center text-white"
+              class="btn btn-secondary mt-auto text-center text-white"
               href="https://dev.to/akashgiri"
               target="_blank"
               >Blog on DEV.to</a
@@ -290,10 +290,10 @@
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
             <div class="h1">
-              <i class="fab fa-twitter mb-4 text-dark" aria-hidden="true"></i>
+              <i class="fab fa-twitter" aria-hidden="true"></i>
             </div>
             <a
-              class="btn btn-lg btn-dark mt-auto mb-4 text-center text-white"
+              class="btn btn-secondary mt-auto text-center text-white"
               href="https://twitter.com/akashgiricse"
               target="_blank"
               >Twitter</a
@@ -303,10 +303,10 @@
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
             <div class="h1">
-              <i class="fab fa-linkedin mb-4 text-dark" aria-hidden="true"></i>
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
             </div>
             <a
-              class="btn btn-lg btn-dark mt-auto mb-4 text-center text-white"
+              class="btn btn-secondary mt-auto text-center text-white"
               href="https://www.linkedin.com/in/akashgiricse/"
               target="_blank"
               >LinkedIn</a
@@ -316,10 +316,10 @@
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
             <div class="h1">
-              <i class="fab fa-github mb-4 text-dark" aria-hidden="true"></i>
+              <i class="fab fa-github" aria-hidden="true"></i>
             </div>
             <a
-              class="btn btn-lg btn-dark mt-auto mb-4 text-center text-white"
+              class="btn btn-secondary mt-auto text-center text-white"
               href="https://github.com/akashgiricse"
               target="_blank"
               >GitHub</a
@@ -337,34 +337,83 @@
           if you like my work
         </p>
 
-        <div class="row my-5">
+        <div class="row">
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <a
+            <!-- <a
               href="https://www.patreon.com/akashgiri"
               class="btn btn-lg btn-dark mt-auto"
               ><i class="fab fa-patreon" aria-hidden="true"></i> Patreon</a
+            > -->
+            <a
+              href="https://www.patreon.com/bePatron?u=36113488"
+              data-patreon-widget-type="become-patron-button"
+              >Become a Patron!</a
             >
+            <script
+              async
+              src="https://c6.patreon.com/becomePatronButton.bundle.js"
+            ></script>
           </div>
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <a
+            <link
+              href="https://fonts.googleapis.com/css?family=Cookie"
+              rel="stylesheet"
+            /><a
+              class="bmc-button"
+              target="_blank"
               href="https://www.buymeacoffee.com/akashgiri"
-              class="btn btn-lg btn-dark mt-auto"
-              ><i class="fas fa-coffee" aria-hidden="true"></i> Buy me a
-              coffee</a
+              ><img
+                src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                alt="Buy me a coffee"
+              /><span style="margin-left: 5px; font-size: 28px !important;"
+                >Buy me a coffee</span
+              ></a
             >
           </div>
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <a
-              href="http://www.paypal.me/akashgiricse"
-              class="btn btn-lg btn-dark mt-auto"
-              ><i class="fab fa-paypal" aria-hidden="true"></i> PayPal</a
-            >
+            <div id="paypal-button-container"></div>
+            <script
+              src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+              data-sdk-integration-source="button-factory"
+            ></script>
+            <script>
+              paypal
+                .Buttons({
+                  style: {
+                    shape: "rect",
+                    color: "gold",
+                    layout: "vertical",
+                    label: "paypal",
+                  },
+                  createOrder: function (data, actions) {
+                    return actions.order.create({
+                      purchase_units: [
+                        {
+                          amount: {
+                            value: "1",
+                          },
+                        },
+                      ],
+                    });
+                  },
+                  onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                      alert(
+                        "Transaction completed by " +
+                          details.payer.name.given_name +
+                          "!"
+                      );
+                    });
+                  },
+                })
+                .render("#paypal-button-container");
+            </script>
           </div>
 
           <div
@@ -471,7 +520,7 @@
         </form>
       </div>
     </section>
-    <footer class="bg-light">
+    <footer>
       <div class="container py-3 py-sm-5">
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-3">
@@ -513,27 +562,25 @@
                 <a
                   href="https://www.instagram.com/akashgiricse/"
                   target="_blank"
-                  ><i class="fab fa-instagram text-dark" aria-hidden="true"></i>
+                  ><i class="fab fa-instagram" aria-hidden="true"></i>
                   Instagram</a
                 >
               </li>
               <li>
                 <a href="https://twitter.com/akashgiricse" target="_blank"
-                  ><i class="fab fa-twitter text-dark" aria-hidden="true"></i>
-                  Twitter</a
+                  ><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a
                 >
               </li>
               <li>
                 <a href="https://www.youtube.com/c/akashgiri" target="_blank"
-                  ><i class="fab fa-youtube text-dark" aria-hidden="true"></i>
-                  YouTube</a
+                  ><i class="fab fa-youtube" aria-hidden="true"></i> YouTube</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/akashgiricse/"
                   target="_blank"
-                  ><i class="fab fa-linkedin text-dark" aria-hidden="true"></i>
+                  ><i class="fab fa-linkedin" aria-hidden="true"></i>
                   LinkedIn</a
                 >
               </li>
