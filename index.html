@@ -274,56 +274,44 @@
         </p>
         <div class="row">
           <div
-            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center"
           >
-            <div class="h1">
-              <i class="fab fa-dev" aria-hidden="true"></i>
-            </div>
             <a
-              class="btn btn-secondary mt-auto text-center text-white"
+              class="social-icon"
               href="https://dev.to/akashgiri"
               target="_blank"
-              >Blog on DEV.to</a
-            >
+              ><i class="fab fa-dev" aria-hidden="true"></i
+            ></a>
           </div>
           <div
-            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center"
           >
-            <div class="h1">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </div>
             <a
-              class="btn btn-secondary mt-auto text-center text-white"
+              class="social-icon"
               href="https://twitter.com/akashgiricse"
               target="_blank"
-              >Twitter</a
-            >
+              ><i class="fab fa-twitter" aria-hidden="true"></i
+            ></a>
           </div>
           <div
-            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center"
           >
-            <div class="h1">
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
-            </div>
             <a
-              class="btn btn-secondary mt-auto text-center text-white"
+              class="social-icon"
               href="https://www.linkedin.com/in/akashgiricse/"
               target="_blank"
-              >LinkedIn</a
-            >
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
           </div>
           <div
-            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
+            class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center"
           >
-            <div class="h1">
-              <i class="fab fa-github" aria-hidden="true"></i>
-            </div>
             <a
-              class="btn btn-secondary mt-auto text-center text-white"
+              class="social-icon"
               href="https://github.com/akashgiricse"
               target="_blank"
-              >GitHub</a
-            >
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -341,20 +329,16 @@
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <!-- <a
-              href="https://www.patreon.com/akashgiri"
-              class="btn btn-lg btn-dark mt-auto"
-              ><i class="fab fa-patreon" aria-hidden="true"></i> Patreon</a
-            > -->
-            <a
-              href="https://www.patreon.com/bePatron?u=36113488"
-              data-patreon-widget-type="become-patron-button"
-              >Become a Patron!</a
-            >
-            <script
-              async
-              src="https://c6.patreon.com/becomePatronButton.bundle.js"
-            ></script>
+            <a href="https://www.patreon.com/akashgiri" target="_blank"
+              ><img
+                src="./assets/img/become_a_patron_button@2x.png"
+                alt="Become a Patron"
+                style="
+                  height: 51px !important;
+                  width: 217px !important;
+                  border-radius: 5px;
+                "
+            /></a>
           </div>
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
@@ -377,56 +361,27 @@
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <div id="paypal-button-container"></div>
-            <script
-              src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
-              data-sdk-integration-source="button-factory"
-            ></script>
-            <script>
-              paypal
-                .Buttons({
-                  style: {
-                    shape: "rect",
-                    color: "gold",
-                    layout: "vertical",
-                    label: "paypal",
-                  },
-                  createOrder: function (data, actions) {
-                    return actions.order.create({
-                      purchase_units: [
-                        {
-                          amount: {
-                            value: "1",
-                          },
-                        },
-                      ],
-                    });
-                  },
-                  onApprove: function (data, actions) {
-                    return actions.order.capture().then(function (details) {
-                      alert(
-                        "Transaction completed by " +
-                          details.payer.name.given_name +
-                          "!"
-                      );
-                    });
-                  },
-                })
-                .render("#paypal-button-container");
-            </script>
+            <a href="https://www.paypal.me/akashgiricse" target="_blank"
+              ><img
+                src="./assets/img/btn_paywith_primary_l.webp"
+                alt="Pay with PayPal"
+                style="height: 51px !important; width: 217px !important;"
+            /></a>
           </div>
 
           <div
             class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5"
           >
-            <a
-              href="#"
-              class="btn btn-lg btn-dark mt-auto"
-              data-toggle="modal"
-              data-target="#modal"
-              ><i class="fas fa-rupee-sign" aria-hidden="true"></i> UPI
-              Address</a
-            >
+            <a href="#" target="_blank" data-toggle="modal" data-target="#modal"
+              ><img
+                src="./assets/img/bhimupi.png"
+                alt="Become a Patron"
+                style="
+                  height: 51px !important;
+                  width: 217px !important;
+                  border-radius: 5px;
+                "
+            /></a>
           </div>
           <div
             class="modal fade"
