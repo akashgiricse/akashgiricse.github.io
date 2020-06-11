@@ -180,9 +180,9 @@
             </div>
             <div class="col-12 col-lg-4">
               <h1>
-                <b></b>
-                  <i class="fab fa-youtube text-danger" aria-hidden="true"></i
-                  > YouTube
+                <b>
+                  <i class="fab fa-youtube text-danger" aria-hidden="true"></i>
+                  YouTube
                 </b>
               </h1>
               <p class="lead text-dark text-justify">
@@ -212,8 +212,16 @@
       </div>
     </section>
     <section id="section-newsletter" class="bg-danger">
-      <div class="container ">
-        <form class="py-5 text-white">
+      <div class="container">
+        <form
+          class="py-5 text-white"
+          action="https://app.convertkit.com/forms/1453761/subscriptions"
+          method="post"
+          data-sv-form="1453761"
+          data-uid="5c1babdb01"
+          data-format="inline"
+          data-version="5"
+        >
           <h2 class="text-center">Get notified of new updates</h2>
           <p>
             Receive the latest updates and offers by signing up to my newsletter
@@ -225,6 +233,7 @@
                 <input
                   type="text"
                   class="form-control"
+                  name="fields[first_name]"
                   placeholder="First-name Last-name"
                   id="input-name"
                 />
@@ -236,6 +245,7 @@
                 <input
                   type="email"
                   class="form-control"
+                  name="email_address"
                   placeholder="mail@example.com"
                   id="input-email"
                 />
@@ -248,7 +258,9 @@
               ><b><i>YOUR EMAIL ADDRESS WILL NEVER BE SHARED</i></b>
             </small>
 
-            <button type="submit" class="btn btn-dark">Sign up</button>
+            <button type="submit" class="btn btn-dark" data-element="submit">
+              Sign up
+            </button>
           </div>
         </form>
       </div>
@@ -392,7 +404,7 @@
     </div>
 
     <section id="section-contact" class="bg-danger">
-      <div class="container ">
+      <div class="container">
         <form
           class="py-5 text-white"
           action="https://formspree.io/akashgiricse@gmail.com"
@@ -550,7 +562,7 @@
                 <script type="text/javascript">
                   document.write(new Date().getFullYear());
                 </script>
-                Akash Giri |
+                Akash Giri.
               </li>
               <li class="list-inline-item">All rights reserved.</li>
             </ul>
