@@ -6,23 +6,17 @@
   min-height: 100vh;
 }
 
-.jumbotron-youtube {
-  background-image: none;
-  min-height: 1vh;
-}
-
+.jumbotron-youtube,
 .jumbotron-email-confirm,
 .jumbotron-email-success {
   background-image: none;
   min-height: 1vh;
+  margin-bottom: 0;
 }
 
 section {
   padding-top: 4rem;
 }
-/* #section-newsletter {
-  padding-top: 0;
-} */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -80,6 +74,12 @@ h6 {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+
+.support-image {
+  height: 51px !important;
+  width: 217px !important;
+  border-radius: 5px;
 }
 
 .fa-dev {
