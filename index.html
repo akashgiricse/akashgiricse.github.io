@@ -603,6 +603,10 @@
       $(function () {
         var scroll = new SmoothScroll('a[href*="#section-"]');
       });
+
+      $(".navbar-nav>li>a").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
     </script>
   </body>
 </html>
