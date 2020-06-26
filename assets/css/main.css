@@ -10,12 +10,12 @@
 .jumbotron-email-confirm,
 .jumbotron-email-success {
   background-image: none;
-  min-height: 1vh;
+  min-height: 0vh;
   margin-bottom: 0;
 }
 
 section {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 body {
@@ -72,8 +72,6 @@ h6 {
   font-size: 100px;
   width: 100px;
   text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
 }
 
 .support-image {
